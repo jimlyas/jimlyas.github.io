@@ -1,5 +1,5 @@
 # Project information
-site_name: Portofolio Website
+site_name: Portofolio
 site_url: https://jimlyas.github.io/
 site_author: Jimly A.
 site_description: >-
@@ -24,13 +24,16 @@ plugins:
 
 # Repository
 repo_url: https://github.com/jimlyas/jimlyas.github.io
-repo_name: jimlyas
+repo_name: Repository
 edit_uri: ""
 copyright: Copyright &copy; 2021 Jimly A.
 
 # Navigation
 nav:
   - Introduction: index.md
+  - Education: education.md
+  - Experience: experience.md
+  - Skills: skills.md
 
 markdown_extensions:
   - pymdownx.highlight
@@ -60,4 +63,12 @@ extra:
       link: https://facebook.com/Mckey.moose/
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/jiimlyy
+    - icon: fontawesome/brands/steam
+      link: https://steamcommunity.com/id/jimlyas/
+    - icon: fontawesome/brands/discord
+      link: https://discordapp.com/users/514740952829526017
+    - icon: fontawesome/brands/spotify
+      link: https://open.spotify.com/playlist/3WyR0MIx03K3T6uuqSW3Ev?si=0b372ee65b644826
+    - icon: fontawesome/brands/windows
+      link: mailto:j_mly@outlook.co.id
     
