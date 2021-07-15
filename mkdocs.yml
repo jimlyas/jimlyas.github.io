@@ -21,10 +21,6 @@ theme:
 
 plugins:
   - search
-  - tooltips
-  - minify:
-      minify_html: true
-      minify_js: true
 
 # Repository
 repo_url: https://github.com/jimlyas/jimlyas.github.io
@@ -51,9 +47,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-
-extra_css:
-  - stylesheets/hint.min.css
 
 extra:
   social:
