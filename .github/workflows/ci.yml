@@ -1,4 +1,4 @@
-name: ci 
+name: deployment 
 on:
   push:
     branches: 
@@ -13,4 +13,6 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install mkdocs-material 
+      - run: pip install mkdocs-tooltips
+      - run: pip install mkdocs-minify-plugin
       - run: mkdocs gh-deploy --force
