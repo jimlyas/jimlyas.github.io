@@ -1,0 +1,70 @@
+# Project information
+site_name: Portofolio Website
+site_url: https://jimlyas.github.io/
+site_author: Jimly A.
+site_description: >-
+  My website portofolio
+
+theme:
+  name: material
+  # logo: assets/icon.png
+  # favicon: assets/icon.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    scheme: slate
+    primary: red
+    accent: blue
+  features:
+    - navigation.instant
+    - navigation.top
+
+plugins:
+  - search
+  - tooltips
+  - minify:
+      minify_html: true
+      minify_js: true
+
+# Repository
+repo_url: https://github.com/jimlyas/jimlyas.github.io
+repo_name: jimlyas
+edit_uri: ""
+copyright: Copyright &copy; 2021 Jimly A.
+
+# Navigation
+nav:
+  - Introduction: index.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - def_list
+  - pymdownx.snippets
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - attr_list
+  - admonition
+  - meta
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra_css:
+  - stylesheets/hint.min.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/jimlyas
+    - icon: fontawesome/brands/github
+      link: https://github.com/jimlyas
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/j_mly
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/Mckey.moose/
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/jiimlyy
+    
