@@ -34,6 +34,7 @@ nav:
   - Education: education.md
   - Experience: experience.md
   - Skills: skills.md
+  - Certification: certification.md
 
 markdown_extensions:
   - pymdownx.highlight
