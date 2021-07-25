@@ -5,15 +5,17 @@ site_author: Jimly A.
 site_description: >-
   My website portofolio
 
+docs_dir: docs/content
 theme:
   name: material
   # logo: assets/icon.png
   # favicon: assets/icon.png
+  custom_dir: docs/theme
   icon:
     repo: fontawesome/brands/github
   palette:
     scheme: slate
-    primary: red
+    primary: blue grey
     accent: blue
   features:
     - navigation.instant
@@ -23,9 +25,6 @@ plugins:
   - search
 
 # Repository
-repo_url: https://github.com/jimlyas/jimlyas.github.io
-repo_name: Repository
-edit_uri: ""
 copyright: Copyright &copy; 2021 Jimly A.
 
 # Navigation
@@ -76,4 +75,3 @@ extra:
       link: https://open.spotify.com/playlist/3WyR0MIx03K3T6uuqSW3Ev?si=0b372ee65b644826
     - icon: fontawesome/brands/windows
       link: mailto:j_mly@outlook.co.id
-    
