@@ -57,6 +57,8 @@ extra:
       link: https://www.linkedin.com/in/jimlyas
     - icon: fontawesome/brands/github
       link: https://github.com/jimlyas
+    - icon: fontawesome/brands/medium
+      link: https://jimlyas.medium.com
     - icon: fontawesome/brands/figma
       link: https://www.figma.com/@jimlyas
     - icon: fontawesome/brands/stack-overflow
