@@ -10,7 +10,6 @@ theme:
   name: material
   # logo: assets/icon.png
   # favicon: assets/icon.png
-  custom_dir: docs/theme
   icon:
     repo: fontawesome/brands/github
   palette:
@@ -52,6 +51,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/jimlyas
@@ -61,6 +61,8 @@ extra:
       link: https://jimlyas.medium.com
     - icon: fontawesome/brands/figma
       link: https://www.figma.com/@jimlyas
+    - icon: fontawesome/brands/dev-to
+      link: https://dev.to/jimlyas
     - icon: fontawesome/brands/stack-overflow
       link: https://stackoverflow.com/users/13200027/jimly-asshiddiqy
     - icon: fontawesome/brands/twitter
