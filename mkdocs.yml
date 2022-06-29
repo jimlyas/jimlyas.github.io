@@ -53,6 +53,10 @@ markdown_extensions:
 extra:
   generator: false
   social:
+    - icon: fontawesome/brands/google
+      link: https://g.dev/jimly
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCNYEbx5BhuXeo1In2aP32cg
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/jimlyas
     - icon: fontawesome/brands/github
@@ -65,17 +69,5 @@ extra:
       link: https://dev.to/jimlyas
     - icon: fontawesome/brands/stack-overflow
       link: https://stackoverflow.com/users/13200027/jimly-asshiddiqy
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/j_mly
-    - icon: fontawesome/brands/facebook
-      link: https://facebook.com/Mckey.moose/
-    - icon: fontawesome/brands/instagram
-      link: https://instagram.com/jiimlyy
-    - icon: fontawesome/brands/steam
-      link: https://steamcommunity.com/id/jimlyas/
-    - icon: fontawesome/brands/discord
-      link: https://discordapp.com/users/514740952829526017
-    - icon: fontawesome/brands/spotify
-      link: https://open.spotify.com/playlist/3WyR0MIx03K3T6uuqSW3Ev?si=0b372ee65b644826
     - icon: fontawesome/brands/windows
-      link: mailto:j_mly@outlook.co.id
+      link: mailto:gmail@jimlyas.com
