@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Windows 95 style personal CV website">
+  <title>jimlyasOS v1.0</title>
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='1' y='1' width='6' height='6' fill='%23FF0000'/><rect x='9' y='1' width='6' height='6' fill='%2300FF00'/><rect x='1' y='9' width='6' height='6' fill='%230000FF'/><rect x='9' y='9' width='6' height='6' fill='%23FFFF00'/></svg>">
+</head>
+<body>
+  <div class="boot-screen">
+    <div class="boot-text">
+      <div>jimlyasOS v1.0 — Loading...</div>
+      <div style="margin-top: 8px; font-size: 12px;">
+        <span class="boot-loading-text">Initializing...</span>
+      </div>
+    </div>
+    <div class="boot-progress-container">
+      <div class="boot-progress-bar"></div>
+    </div>
+  </div>
+
+  <div class="desktop"></div>
+
+  <div class="taskbar">
+    <button class="start-button">
+      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="6" height="6" fill="#FF0000"/>
+        <rect x="9" y="1" width="6" height="6" fill="#00FF00"/>
+        <rect x="1" y="9" width="6" height="6" fill="#0000FF"/>
+        <rect x="9" y="9" width="6" height="6" fill="#FFFF00"/>
+      </svg>
+      <span>Start</span>
+    </button>
+    <div class="taskbar-windows"></div>
+    <div class="taskbar-clock">00:00</div>
+  </div>
+
+  <div class="start-menu">
+    <div class="start-menu-sidebar">jimlyasOS</div>
+    <div class="start-menu-items">
+      <div class="start-menu-user">
+        <img src="" alt="User Avatar">
+        <div class="start-menu-user-info">
+          <div class="start-menu-user-name">Loading...</div>
+        </div>
+      </div>
+      <div class="start-menu-divider"></div>
+    </div>
+  </div>
+
+  <div class="context-menu">
+    <div class="context-menu-item" data-action="find">Find...</div>
+    <div class="context-menu-divider"></div>
+    <div class="context-menu-item" data-action="refresh">Refresh</div>
+    <div class="context-menu-divider"></div>
+    <div class="context-menu-item" data-action="about">About jimlyasOS</div>
+  </div>
+
+  <div class="mobile-view" id="mobile-view">
+    <div class="mobile-header">
+      <img class="mobile-avatar" id="mobile-avatar" src="" alt="Avatar">
+      <div class="mobile-name" id="mobile-name">Loading...</div>
+      <div class="mobile-headline" id="mobile-headline"></div>
+    </div>
+    
+    <div class="mobile-postits" id="mobile-postits">
+      <div class="mobile-postit">Open to work!</div>
+      <div class="mobile-postit">Last updated: March 2026</div>
+    </div>
+    
+    <div class="mobile-section" id="mobile-about">
+      <div class="mobile-section-title">About Me</div>
+      <div class="mobile-section-content" id="mobile-about-content">
+        <p id="mobile-summary"></p>
+        <p id="mobile-location" style="margin-top: 8px; font-size: 12px;"></p>
+      </div>
+    </div>
+    
+    <div class="mobile-section" id="mobile-work">
+      <div class="mobile-section-title">Work History</div>
+      <div class="mobile-section-content" id="mobile-work-content"></div>
+    </div>
+    
+    <div class="mobile-section" id="mobile-skills">
+      <div class="mobile-section-title">Skills</div>
+      <div class="mobile-section-content">
+        <div class="mobile-skills-grid" id="mobile-skills-content"></div>
+      </div>
+    </div>
+    
+    <div class="mobile-section" id="mobile-education">
+      <div class="mobile-section-title">Education</div>
+      <div class="mobile-section-content" id="mobile-education-content"></div>
+    </div>
+    
+    <div class="mobile-section" id="mobile-repos">
+      <div class="mobile-section-title">My Repositories</div>
+      <div class="mobile-section-content" id="mobile-repos-content"></div>
+    </div>
+    
+    <div class="mobile-section" id="mobile-contact">
+      <div class="mobile-section-title">Contact</div>
+      <div class="mobile-section-content">
+        <div class="mobile-contact-links" id="mobile-contact-content"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="mobile-nav">
+    <a href="#mobile-about" class="mobile-nav-btn">
+      <svg viewBox="0 0 32 32"><rect x="2" y="2" width="28" height="28" fill="#FFFFC0"/><rect x="4" y="4" width="24" height="4" fill="#000080"/></svg>
+      About
+    </a>
+    <a href="#mobile-work" class="mobile-nav-btn">
+      <svg viewBox="0 0 32 32"><rect x="2" y="4" width="28" height="24" fill="#E0E0E0"/><rect x="2" y="4" width="28" height="4" fill="#000080"/></svg>
+      Work
+    </a>
+    <a href="#mobile-skills" class="mobile-nav-btn">
+      <svg viewBox="0 0 32 32"><rect x="2" y="2" width="28" height="28" fill="#FFFFC0"/><rect x="4" y="6" width="8" height="2" fill="#000080"/></svg>
+      Skills
+    </a>
+    <a href="#mobile-contact" class="mobile-nav-btn">
+      <svg viewBox="0 0 32 32"><rect x="2" y="2" width="28" height="28" fill="#008080"/><rect x="4" y="4" width="24" height="24" fill="#C0C0C0"/></svg>
+      Contact
+    </a>
+  </div>
+
+  <script src="js/data.js?v=3"></script>
+  <script src="js/screensaver.js?v=3"></script>
+  <script src="js/search.js?v=3"></script>
+  <script src="js/work-calendar.js?v=1"></script>
+  <script src="js/blog.js?v=1"></script>
+  <script src="js/skills.js?v=1"></script>
+  <script src="js/education.js?v=1"></script>
+  <script src="js/desktop.js?v=4"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const data = await fetchAllData(false);
+        runBootSequence(data, () => {
+          if (typeof buildSearchIndex === 'function') {
+            buildSearchIndex(data);
+          }
+          if (typeof initScreensaver === 'function') {
+            initScreensaver();
+          }
+          if (typeof initPostItNotes === 'function') {
+            initPostItNotes();
+          }
+        });
+      } catch (error) {
+        console.error('Failed to load data:', error);
+        document.querySelector('.boot-screen').classList.add('hidden');
+        initDesktop({
+          name: 'User',
+          headline: 'Software Developer',
+          location: 'Earth',
+          summary: 'Failed to load data. Please check your connection.',
+          github: { avatar: '', name: 'User' },
+          experience: [],
+          education: [],
+          skills: { languages: [], frameworks: [], tools: [], cloud: [] },
+          repos: []
+        });
+        if (typeof initScreensaver === 'function') {
+          initScreensaver();
+        }
+        if (typeof initPostItNotes === 'function') {
+          initPostItNotes();
+        }
+      }
+    });
+  </script>
+</body>
+</html>

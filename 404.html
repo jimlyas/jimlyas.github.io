@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jimlyasOS - Error</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #0000AA;
+      color: #FFFFFF;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .error-container {
+      max-width: 700px;
+      text-align: left;
+    }
+    .error-code {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 20px 0;
+    }
+    .technical-info {
+      margin-top: 20px;
+      border-top: 1px solid #FFFFFF;
+      padding-top: 20px;
+    }
+    .countdown {
+      margin-top: 40px;
+      font-weight: bold;
+    }
+    a {
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <div class="error-code">
+      A problem has been detected and jimlyasOS has been shut down
+      to prevent damage to your career.
+    </div>
+
+    <div style="margin-top: 20px;">
+      PAGE_NOT_FOUND (0x00000404)
+    </div>
+
+    <div style="margin-top: 20px;">
+      If this is the first time you've seen this profile error,
+      restart your browser and try again.
+    </div>
+
+    <div class="technical-info">
+      Technical information:<br>
+      *** STOP: 0x00000404 (PAGE_NOT_FOUND)
+    </div>
+
+    <div class="countdown">
+      Returning to desktop in <span id="countdown">10</span>...
+    </div>
+  </div>
+
+  <script>
+    let count = 10;
+    const countdownEl = document.getElementById('countdown');
+    
+    const interval = setInterval(() => {
+      count--;
+      countdownEl.textContent = count;
+      
+      if (count <= 0) {
+        clearInterval(interval);
+        window.location.href = '/';
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

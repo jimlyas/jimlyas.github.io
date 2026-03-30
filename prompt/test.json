@@ -1,0 +1,39 @@
+{
+ "education": [
+    {
+      "institution": "Telkom University",
+      "degree": "Bachelor's in Information System",
+      "grade": 3.08,
+      "description": "Activities and societies: Lembaga Dakwah Kampus, Perhimpunan Mahasiswa Bekasi. Took Enterprise Resource Planning (ERP) specialization",
+      "year": "2021"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Dev Certified for Android",
+      "issuer": "dev.cert by dev.id",
+      "issued" : "Sep 2025 ",
+      "expired" : "Sep 2028",
+      "skills": ["Android", "Android Development", "Kotlin"]
+    },
+    {
+      "name": "Gradle Build Caching",
+      "issuer": "Gradle Technologies",
+      "issued" : "Oct 2024 ",
+      "skills": ["Gradle", "Build Tools"]
+    },
+    {
+      "name": "Google Analytics Individual Qualification",
+      "issuer": "Google Digital Academy (Skillshop)",
+      "issued" : "May 2024 ",
+      "skills": ["Google Analytics"]
+    },
+    {
+      "name": "Kotlin Android Developer Expert",
+      "issuer": "Dicoding Indonesia",
+      "issued" : "Sep 2018 ",
+      "expired" : "Sep 2021",
+      "skills": ["Android", "Android Development", "Kotlin"]
+    }
+  ]   
+}

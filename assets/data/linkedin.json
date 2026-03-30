@@ -1,0 +1,56 @@
+{
+  "name": "Jimly Asshiddiqy",
+  "headline": "Android Application Developer | Google Cloud Enthusiast | ERP SAP Certified",
+  "location": "Jakarta, Indonesia",
+  "summary": "Passionate Android developer with expertise in building high-quality mobile applications. Experienced in Kotlin, Jetpack Compose, and Google Cloud technologies. Committed to writing clean, maintainable code and staying updated with the latest mobile development trends.",
+  "email": "j_mly@ymail.com",
+  "github": "jimlyas",
+  "linkedin": "jimlyas",
+  "experience": [
+    {
+      "company": "Accenture",
+      "role": "Custom Software Engineering Specialist",
+      "startDate": "Sep 2022",
+      "endDate": "Present",
+      "description": "Design, build and configure applications to meet business process and application requirements for Android Project. Collaborate with cross-functional teams to deliver high-quality mobile solutions.",
+      "techStack": ["Android", "Kotlin", "Jetpack Compose", "Gradle", "Google Analytics"]
+    },
+    {
+      "company": "Telkom Indonesia",
+      "role": "Junior Developer",
+      "startDate": "Mar 2019",
+      "endDate": "Aug 2022",
+      "description": "Design, build and configure applications to meet business process and application requirements for Android Project. Developed internal applications for business operations.",
+      "techStack": ["Android", "Kotlin", "Gradle", "Google Analytics"]
+    },
+    {
+      "company": "Komatsu Indonesia",
+      "role": "Development Intern",
+      "startDate": "May 2018",
+      "endDate": "Jul 2018",
+      "description": "Develop Mobile Application to support company's business process. During internship, finished developing two applications for company's internal use.",
+      "techStack": ["Android", "Kotlin", "REST API"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Telkom University",
+      "degree": "Bachelor's in Information System",
+      "year": "2021"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "SAP Certified Application Associate",
+      "issuer": "SAP",
+      "year": "2022"
+    }
+  ],
+  "skills": {
+    "Languages": ["Java", "Kotlin", "Python"],
+    "Mobile & UI": ["Android", "Jetpack Compose", "Qt"],
+    "Tools": ["Git", "Docker", "Gradle", "Android Studio", "VS Code"],
+    "Design & Docs": ["Figma", "Sketch", "Markdown", "Google Analytics"],
+    "Cloud & AI": ["GCP", "Ollama", "MCP"]
+  }
+}
