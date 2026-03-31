@@ -463,7 +463,7 @@ function openBlogWindow() {
     return;
   }
   
-  createWindow('blog', 'Blog', icons.blog, '<div id="window-blog"></div>', { width: 900, height: 600 });
+  createWindow('blog', 'Blog', icons.blog, '<div id="window-blog"></div>', { width: 1000, height: 600 });
   
   requestAnimationFrame(() => {
     initBlog();

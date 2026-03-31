@@ -1,102 +1,20 @@
+const CDN = 'assets/icons';
+
 const icons = {
-  about: `<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="2" y="2" width="28" height="28" fill="#FFFFC0" stroke="#808080"/>
-    <rect x="4" y="4" width="24" height="4" fill="#000080"/>
-    <rect x="6" y="10" width="20" height="2" fill="#000"/>
-    <rect x="6" y="14" width="18" height="2" fill="#000"/>
-    <rect x="6" y="18" width="14" height="2" fill="#000"/>
-    <rect x="6" y="22" width="10" height="2" fill="#000"/>
-  </svg>`,
-  work: `<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="2" y="4" width="28" height="24" fill="#E0E0E0" stroke="#808080"/>
-    <rect x="2" y="4" width="28" height="4" fill="#000080"/>
-    <line x1="2" y1="12" x2="30" y2="12" stroke="#808080"/>
-    <line x1="2" y1="18" x2="30" y2="18" stroke="#808080"/>
-    <line x1="2" y1="24" x2="30" y2="24" stroke="#808080"/>
-    <line x1="10" y1="8" x2="10" y2="28" stroke="#808080"/>
-    <line x1="20" y1="8" x2="20" y2="28" stroke="#808080"/>
-  </svg>`,
-  skills: `<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="2" y="2" width="28" height="28" fill="#FFFFC0" stroke="#808080"/>
-    <rect x="4" y="6" width="8" height="2" fill="#000080"/>
-    <rect x="4" y="10" width="20" height="1" fill="#000"/>
-    <rect x="4" y="13" width="16" height="1" fill="#000"/>
-    <rect x="4" y="16" width="18" height="1" fill="#000"/>
-    <rect x="4" y="19" width="12" height="1" fill="#000"/>
-    <rect x="4" y="22" width="20" height="1" fill="#000"/>
-    <rect x="4" y="25" width="14" height="1" fill="#000"/>
-  </svg>`,
-  education: `<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M16 4L4 10L16 16L28 10L16 4Z" fill="#000080"/>
-    <path d="M4 10V20L16 26L28 20V10" fill="#C0C0C0"/>
-    <rect x="14" y="20" width="4" height="8" fill="#808080"/>
-  </svg>`,
-  repos: `<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="4" y="4" width="24" height="24" fill="#000080" stroke="#808080"/>
-    <circle cx="16" cy="16" r="8" fill="#FFFF00"/>
-    <circle cx="16" cy="16" r="4" fill="#000080"/>
-  </svg>`,
-  blog: `<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="4" y="2" width="24" height="28" fill="#FFFFC0" stroke="#808080"/>
-    <rect x="4" y="2" width="24" height="4" fill="#000080"/>
-    <rect x="7" y="9" width="18" height="2" fill="#000"/>
-    <rect x="7" y="13" width="14" height="2" fill="#000"/>
-    <rect x="7" y="17" width="16" height="2" fill="#000"/>
-    <rect x="7" y="21" width="12" height="2" fill="#000"/>
-  </svg>`,
-  contact: `<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="2" y="2" width="28" height="28" rx="2" fill="#008080" stroke="#808080"/>
-    <rect x="4" y="4" width="24" height="24" rx="2" fill="#C0C0C0"/>
-    <rect x="8" y="10" width="16" height="2" fill="#808080"/>
-    <rect x="8" y="14" width="16" height="2" fill="#808080"/>
-    <rect x="8" y="18" width="12" height="2" fill="#808080"/>
-    <circle cx="16" cy="24" r="2" fill="#00FF00"/>
-  </svg>`,
-  recycleBin: `<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="6" y="4" width="20" height="24" fill="#C0C0C0" stroke="#808080"/>
-    <rect x="8" y="2" width="16" height="4" fill="#808080"/>
-    <rect x="10" y="8" width="12" height="2" fill="#000"/>
-    <rect x="10" y="12" width="12" height="2" fill="#000"/>
-    <rect x="10" y="16" width="12" height="2" fill="#000"/>
-    <rect x="10" y="20" width="12" height="2" fill="#000"/>
-    <line x1="12" y1="10" x2="12" y2="18" stroke="#000" stroke-width="2"/>
-    <line x1="16" y1="10" x2="16" y2="18" stroke="#000" stroke-width="2"/>
-    <line x1="20" y1="10" x2="20" y2="18" stroke="#000" stroke-width="2"/>
-  </svg>`,
-  folder: `<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M2 8L2 26L30 26L30 10L14 10L12 8L2 8Z" fill="#FFFF00"/>
-    <path d="M2 8L30 8L30 10L2 10L2 8Z" fill="#FFFF00"/>
-  </svg>`,
-  file: `<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M4 2L18 2L28 12L28 30L4 30L4 2Z" fill="#FFFFC0"/>
-    <path d="M18 2L18 12L28 12" fill="#C0C0C0"/>
-  </svg>`,
-  windows: `<svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="1" y="1" width="6" height="6" fill="#FF0000"/>
-    <rect x="9" y="1" width="6" height="6" fill="#00FF00"/>
-    <rect x="1" y="9" width="6" height="6" fill="#0000FF"/>
-    <rect x="9" y="9" width="6" height="6" fill="#FFFF00"/>
-  </svg>`,
-  search: `<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="14" cy="14" r="10" fill="none" stroke="#000080" stroke-width="2"/>
-    <line x1="21" y1="21" x2="30" y2="30" stroke="#000080" stroke-width="3"/>
-    <text x="10" y="18" font-size="10" fill="#000080">?</text>
-  </svg>`,
-  settings: `<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="16" cy="16" r="12" fill="#C0C0C0" stroke="#808080"/>
-    <circle cx="16" cy="16" r="6" fill="#808080"/>
-    <rect x="14" y="2" width="4" height="6" fill="#808080"/>
-    <rect x="14" y="24" width="4" height="6" fill="#808080"/>
-    <rect x="2" y="14" width="6" height="4" fill="#808080"/>
-    <rect x="24" y="14" width="6" height="4" fill="#808080"/>
-  </svg>`,
-  controlPanel: `<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="2" y="2" width="28" height="28" fill="#C0C0C0" stroke="#808080"/>
-    <rect x="6" y="6" width="8" height="8" fill="#000080"/>
-    <rect x="18" y="6" width="8" height="8" fill="#00FF00"/>
-    <rect x="6" y="18" width="8" height="8" fill="#FFFF00"/>
-    <rect x="18" y="18" width="8" height="8" fill="#FF0000"/>
-  </svg>`
+  about: `<img src="${CDN}/w2k-user.ico" width="32" height="32" alt="About" data-window-id="window-aboutme" onerror="this.style.display='none';const s=document.createElement('span');s.className='icon-fallback';s.textContent='👤';this.replaceWith(s)">`,
+  work: `<img src="${CDN}/w2k-calendar_2.ico" width="32" height="32" alt="Work History" data-window-id="window-workhistory" onerror="this.style.display='none';const s=document.createElement('span');s.className='icon-fallback';s.textContent='📅';this.replaceWith(s)">`,
+  skills: `<img src="${CDN}/w2k-hard_drive.ico" width="32" height="32" alt="Skills" data-window-id="window-skills" onerror="this.style.display='none';const s=document.createElement('span');s.className='icon-fallback';s.textContent='💽';this.replaceWith(s)">`,
+  education: `<img src="${CDN}/w2k-certificate.ico" width="32" height="32" alt="Education" data-window-id="window-education" onerror="this.style.display='none';const s=document.createElement('span');s.className='icon-fallback';s.textContent='🎓';this.replaceWith(s)">`,
+  repos: `<img src="${CDN}/w2k-folder_network.ico" width="32" height="32" alt="Repositories" data-window-id="window-repos" onerror="this.style.display='none';const s=document.createElement('span');s.className='icon-fallback';s.textContent='🐙';this.replaceWith(s)">`,
+  blog: `<img src="${CDN}/w2k-edit_document.ico" width="32" height="32" alt="Blog" data-window-id="window-blog" onerror="this.style.display='none';const s=document.createElement('span');s.className='icon-fallback';s.textContent='✏️';this.replaceWith(s)">`,
+  contact: `<img src="${CDN}/w2k-mail.ico" width="32" height="32" alt="Contact" data-window-id="window-contact" onerror="this.style.display='none';const s=document.createElement('span');s.className='icon-fallback';s.textContent='📧';this.replaceWith(s)">`,
+  recycleBin: `<img src="${CDN}/w2k-recycle_bin_empty.ico" width="32" height="32" alt="Recycle Bin" data-window-id="window-recycle" onerror="this.style.display='none';const s=document.createElement('span');s.className='icon-fallback';s.textContent='🗑️';this.replaceWith(s)">`,
+  folder: `<img src="${CDN}/w2k-folder.ico" width="32" height="32" alt="Folder" onerror="this.style.display='none';const s=document.createElement('span');s.className='icon-fallback';s.textContent='📁';this.replaceWith(s)">`,
+  file: `<img src="${CDN}/w2k-file.ico" width="32" height="32" alt="File" onerror="this.style.display='none';const s=document.createElement('span');s.className='icon-fallback';s.textContent='📄';this.replaceWith(s)">`,
+  windows: `<img src="${CDN}/w2k-logo.ico" width="16" height="16" alt="Windows" onerror="this.style.display='none';const s=document.createElement('span');s.className='icon-fallback-sm';s.textContent='🪟';this.replaceWith(s)">`,
+  search: `<img src="${CDN}/w2k-search.ico" width="32" height="32" alt="Search" onerror="this.style.display='none';const s=document.createElement('span');s.className='icon-fallback';s.textContent='🔍';this.replaceWith(s)">`,
+  settings: `<img src="${CDN}/w2k-settings.ico" width="32" height="32" alt="Settings" onerror="this.style.display='none';const s=document.createElement('span');s.className='icon-fallback';s.textContent='⚙️';this.replaceWith(s)">`,
+  controlPanel: `<img src="${CDN}/w2k-control_panel.ico" width="32" height="32" alt="Control Panel" onerror="this.style.display='none';const s=document.createElement('span');s.className='icon-fallback';s.textContent='🎛️';this.replaceWith(s)">`
 };
 
 let windowZIndex = 100;
@@ -739,6 +657,7 @@ function initDesktop(data) {
   setupDesktopIcons(data);
   setupStartMenu(data);
   setupContextMenu();
+  initNowPlayingWidget();
   
   setInterval(updateClock, 1000);
   updateClock();
@@ -928,6 +847,79 @@ function initPostItNotes() {
     
     desktop.appendChild(noteEl);
   });
+}
+
+function initNowPlayingWidget() {
+  const widget = document.getElementById('nowplaying-widget');
+  const svgImg = document.getElementById('npw-svg');
+  const offlineSpan = document.querySelector('.npw-offline');
+  if (!widget || !svgImg) return;
+
+  const spotifyUrl = 'https://now-playing-jimlyas.vercel.app/api/spotify-playing';
+
+  let npwPollInterval;
+
+  function loadSpotifySvg() {
+    svgImg.classList.remove('npw-error');
+    offlineSpan.classList.remove('npw-visible');
+    svgImg.src = spotifyUrl + '?t=' + Date.now();
+  }
+
+  svgImg.addEventListener('load', function() {
+    svgImg.classList.remove('npw-error');
+    offlineSpan.classList.remove('npw-visible');
+  });
+
+  svgImg.addEventListener('error', function() {
+    svgImg.classList.add('npw-error');
+    offlineSpan.classList.add('npw-visible');
+  });
+
+  loadSpotifySvg();
+
+  npwPollInterval = setInterval(loadSpotifySvg, 30000);
+
+  const savedPosition = JSON.parse(localStorage.getItem('npw-position'));
+  if (savedPosition) {
+    widget.style.left = savedPosition.x + 'px';
+    widget.style.top = savedPosition.y + 'px';
+  }
+
+  let isDraggingWidget = false;
+  let widgetOffset = { x: 0, y: 0 };
+
+  widget.addEventListener('mousedown', (e) => {
+    if (e.target.closest('.window') || e.target.closest('.start-menu')) return;
+    isDraggingWidget = true;
+    widgetOffset = {
+      x: e.clientX - widget.offsetLeft,
+      y: e.clientY - widget.offsetTop
+    };
+    widget.style.zIndex = ++windowZIndex;
+
+    document.addEventListener('mousemove', onWidgetDrag);
+    document.addEventListener('mouseup', onWidgetDragEnd);
+  });
+
+  function onWidgetDrag(e) {
+    if (!isDraggingWidget) return;
+    const newX = Math.max(0, e.clientX - widgetOffset.x);
+    const newY = Math.max(0, e.clientY - widgetOffset.y);
+    widget.style.left = newX + 'px';
+    widget.style.top = newY + 'px';
+  }
+
+  function onWidgetDragEnd() {
+    isDraggingWidget = false;
+    document.removeEventListener('mousemove', onWidgetDrag);
+    document.removeEventListener('mouseup', onWidgetDragEnd);
+
+    const position = {
+      x: parseInt(widget.style.left),
+      y: parseInt(widget.style.top)
+    };
+    localStorage.setItem('npw-position', JSON.stringify(position));
+  }
 }
 
 if (typeof module !== 'undefined' && module.exports) {
